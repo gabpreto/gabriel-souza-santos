@@ -1,0 +1,22 @@
+@import url("styles/cabecalho.css");
+@import url("styles/barraca.css");
+@import url("styles/slider.css");
+@import url("styles/assuntos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+:root {
+    --fundo-pagina: #EBECEE;
+    --cor-branca: #FFFFFF;
+    --cor-laranja: #EB9B00;
+    --gradiente-azul: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --familia-fonte: "Poppins";
+    --cor-azul: #002F52;
+}
+
+body {
+    background-color: var(--fundo-pagina);
+    font-family: var(--familia-fonte);
+    font-size: 16px;
+    font-weight: 400;
+}

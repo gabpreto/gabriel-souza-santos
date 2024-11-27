@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks - Nova Versão</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle">
+        <span class="header__hamburger menu-icon"></span>
+      </label>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Programação</a></li>
+          <li><a href="#">Design & UX</a></li>
+          <li><a href="#">Negócios</a></li>
+          <li><a href="#">Infraestrutura</a></li>
+        </ul>
+      </nav>
+      <img src="img/Logo.svg" alt="Logo AluraBooks" class="header__logo">
+    </div>
+    <div class="header__icons">
+      <a href="#"><img src="img/Heart.svg" alt="Favoritos"></a>
+      <a href="#"><img src="img/ShoppingCart.svg" alt="Carrinho"></a>
+      <a href="#"><img src="img/Profile.svg" alt="Perfil"></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>O que você quer aprender hoje?</h2>
+    <p>Explore nossa seleção de livros para o seu desenvolvimento profissional!</p>
+    <input type="search" placeholder="Pesquise por um livro" class="search-bar">
+  </section>
+
+  <section class="carousel">
+    <h2>Novidades da Semana</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/ReactGuide.svg" alt="Livro React Guide"></div>
+        <div class="swiper-slide"><img src="img/AI.svg" alt="Livro Inteligência Artificial"></div>
+        <div class="swiper-slide"><img src="img/CloudComputing.svg" alt="Livro Computação em Nuvem"></div>
+        <div class="swiper-slide"><img src="img/PythonEssencial.svg" alt="Livro Python Essencial"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="book-card">
+      <div class="book-card__info">
+        <h3>Você pode gostar de...</h3>
+        <h2>Desenvolvimento Ágil com Scrum</h2>
+        <p>Aprenda como aplicar Scrum em sua equipe para melhorar a produtividade.</p>
+      </div>
+      <img src="img/AgileScrum.svg" alt="Livro Desenvolvimento Ágil">
+      <div class="book-card__actions">
+        <button>Adicionar aos Favoritos</button>
+        <button>Adicionar ao Carrinho</button>
+        <a href="#">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="top-books">
+    <h2>Os Mais Vendidos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/MachineLearning.svg" alt="Livro Machine Learning"></div>
+        <div class="swiper-slide"><img src="img/LeadershipDesign.svg" alt="Livro Leadership Design"></div>
+        <div class="swiper-slide"><img src="img/DeepDiveJS.svg" alt="Livro Deep Dive em JavaScript"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="author-card">
+      <div class="author-card__info">
+        <h3>Autora Destaque</h3>
+        <h2>Clara Ribeiro</h2>
+        <p>Especialista em UX Design, Clara é autora de diversos livros sobre o tema.</p>
+      </div>
+      <img src="img/ClaraRibeiro.svg" alt="Clara Ribeiro">
+      <div class="author-card__actions">
+        <button>Favoritar</button>
+        <button>Adicionar ao Carrinho</button>
+        <a href="#">Leia Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-topics">
+    <h2>Tópicos Populares</h2>
+    <ul>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">Data Science</a></li>
+      <li><a href="#">Gestão de Projetos</a></li>
+      <li><a href="#">DevOps</a></li>
+    </ul>
+  </section>
+
+  <section class="newsletter">
+    <h2>Inscreva-se para novidades!</h2>
+    <p>Receba informações sobre novos livros, e-books, promoções e mais.</p>
+    <input type="email" placeholder="Digite seu e-mail" class="newsletter-input">
+  </section>
+
+  <footer>
+    <p>&copy; 2024 AluraBooks | Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 15,
+      slidesPerView: 4,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
